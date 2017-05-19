@@ -1,0 +1,3 @@
+﻿md58292307c61fad132a4e506d75c88f743.MainActivity
+GAqxN/prq7OryKWcAVCk/nqj4Wg=
+keytool -exportcert -alias androiddebugkey -keystore "C:\Users\Burney\AppData\Local\Xamarin\Mono for Android\debug.keystore"  | "C:\Users\Burney\Downloads\openssl-0.9.8k_WIN32\bin\openssl.exe" sha1 -binary | "C:\Users\Burney\Downloads\openssl-0.9.8k_WIN32\bin\openssl.exe" base64

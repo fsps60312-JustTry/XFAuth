@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6f006b44-0520-487c-adc7-07618629798e</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XFAuth</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AppData\AppData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppData\CarInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppData\FacebookProfile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppData\PhotoManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainTabbedPage\MainTabbedPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainTabbedPage\TabPages\ExplorePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainTabbedPage\TabPages\InboxPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainTabbedPage\TabPages\ProfilePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainTabbedPage\TabPages\SavedPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainTabbedPage\TabPages\TripsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserInfo\CarPage\CarPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserInfo\CarPage\EditCarPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserInfo\UserInfoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserInfo\ReportUserPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
